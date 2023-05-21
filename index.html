@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Todo List</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" href="https://img.icons8.com/fluency/48/todo-list.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="contain">
+            <div class="date-section"></div>
+            <div class="inputField">
+               <input type="text" placeholder="Add Your Todo List Here.....">
+               <button class="add" onclick="addTask()">
+                  <i class="fas fa-plus"></i>
+               </button>
+               <button class="edit" onclick="confirmEditedTask()">
+                  <i class="fas fa-edit"></i>
+               </button>
+            </div>
+            <div class="todo-container">
+               <ul class="todoList">
+                  <!-- data are comes from local storage -->
+               </ul>
+            </div>
+         </div>
+      </div>
+      <script src="script/crud.js"></script>
+      <script src="script/date.js"></script>
+      <!-- <script src="script/script.js"></script> -->
+   </body>
+</html>
